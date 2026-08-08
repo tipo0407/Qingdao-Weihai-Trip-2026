@@ -23,7 +23,7 @@
   .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)} .card h3{margin:0 0 8px;font-size:20px}.card p{margin:7px 0;color:#475467}.card small{color:var(--muted)}
   .who{display:inline-block;padding:5px 9px;border-radius:999px;background:#eff6ff;color:#1d4ed8;font-size:12px;font-weight:700;margin-bottom:10px}
   .route{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:12px;padding:22px;background:linear-gradient(90deg,#eff6ff,#ecfeff);border-radius:var(--radius);border:1px solid #dbeafe}.stop{background:#fff;border:1px solid #dbeafe;border-radius:16px;padding:16px;text-align:center;font-weight:700}.arrow{font-size:22px;color:#0284c7}
-  .note{border-left:4px solid var(--blue2);background:#f0f9ff;border-radius:12px;padding:14px 16px;color:#344054}.note.warn{border-color:#f59e0b;background:var(--warm)}.note.good{border-color:#10b981;background:var(--green)}
+  .note{border-left:4px solid var(--blue2);background:#f0f9ff;border-radius:12px;padding:14px 16px;color:#344054}.note.warn{border-color:#f59e0b;background:var(--warm)}.note.good{border-color:#10b981;background:var(--green)}.note.pit{border-color:#ef4444;background:#fff1f2}.mini{font-size:13px;color:#667085}.spotline{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.spotpill{background:#f8fafc;border:1px solid var(--line);border-radius:999px;padding:5px 10px;font-size:12px;color:#475467}
   .timeline{position:relative;margin-top:24px}.timeline:before{content:"";position:absolute;left:24px;top:0;bottom:0;width:2px;background:#dbeafe}.day{position:relative;padding-left:66px;margin:0 0 18px}.dot{position:absolute;left:10px;top:18px;width:30px;height:30px;background:#fff;border:7px solid #3b82f6;border-radius:50%;box-shadow:0 0 0 4px var(--bg)}
   .day-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px 22px}.date{font-size:13px;font-weight:800;color:var(--blue);letter-spacing:.04em}.day-card h3{margin:4px 0 10px;font-size:21px}.slots{display:grid;grid-template-columns:88px 1fr;gap:6px 12px;font-size:15px}.slots .t{font-weight:800;color:#344054}.slots .v{color:#475467}.pace{float:right;font-size:12px;padding:4px 8px;border-radius:999px;background:#f2f4f7;color:#475467}
   .place{border-top:1px dashed var(--line);padding:12px 0}.place:first-of-type{border-top:0}.place b{display:block;margin-bottom:3px}.tag{display:inline-block;font-size:12px;background:#f2f4f7;color:#475467;border-radius:999px;padding:3px 7px;margin:2px 3px 2px 0}
@@ -38,16 +38,16 @@
 <body>
 <header class="hero">
   <div class="wrap">
-    <div class="eyebrow">Family Trip · Draft v1</div>
+    <div class="eyebrow">Family Trip · Draft v2</div>
     <h1>青岛 · 威海<br>家庭旅行计划</h1>
     <p>2026 年 8 月 28 日—9 月 6 日｜三路家人汇合｜以 11 个月宝宝和长辈舒适度为优先，不赶路、每天留午休、海边为主。</p>
     <div class="chips"><span class="chip">👨‍👩‍👧 7 人家庭团</span><span class="chip">👶 11 个月宝宝</span><span class="chip">✈️ 上海 / 福州 / 襄阳 → 青岛</span><span class="chip">🚄 青岛 → 威海</span><span class="chip">🌊 慢节奏海滨路线</span></div>
   </div>
 </header>
-<nav><div class="wrap"><a href="#overview">总览</a><a href="#arrival">三路汇合</a><a href="#itinerary">每日行程</a><a href="#spots">景点取舍</a><a href="#hotel">住宿建议</a><a href="#baby">宝宝版提示</a><a href="#booking">待预订</a><a href="#sources">资料来源</a></div></nav>
+<nav><div class="wrap"><a href="#overview">总览</a><a href="#arrival">三路汇合</a><a href="#itinerary">每日行程</a><a href="#tips">避坑 & 打卡</a><a href="#spots">景点地图</a><a href="#hotel">住宿建议</a><a href="#baby">宝宝版提示</a><a href="#booking">待预订</a><a href="#sources">资料来源</a></div></nav>
 <main class="wrap">
   <section id="overview" class="section">
-    <h2>01 / 行程总览</h2><p class="lead">第一版建议把 8/28 作为上海落地休息日，8/29 全家在青岛正式汇合；青岛 4 晚，威海 4 晚，9/6 分头返程。</p>
+    <h2>01 / 行程总览</h2><p class="lead">第二版把你之前收集的打卡攻略融进主线：8/28 上海落地休息，8/29 全家青岛汇合；青岛 4 晚，威海 4 晚，9/6 分头返程。主线不追求“景点全收集”，而是按区域串联，尽量不来回折返。</p>
     <div class="route"><div class="stop">8/28<br>上海落地休息</div><div class="arrow">→</div><div class="stop">8/29–9/2<br>青岛 · 4晚</div><div class="arrow">→</div><div class="stop">9/2–9/6<br>威海 · 4晚</div></div>
     <div class="grid grid-3" style="margin-top:16px">
       <div class="card"><div class="who">阶段 A</div><h3>青岛：城市 + 海边</h3><p>老城、栈桥、八大关、第二海水浴场、奥帆中心、五四广场。安排一个“室内 / 下雨备选”。</p></div>
@@ -67,33 +67,70 @@
   </section>
 
   <section id="itinerary" class="section">
-    <h2>03 / 每日行程</h2><p class="lead">每天只设置 1 个“主景点”，其余是顺路附加项。默认 13:00–15:30 是宝宝午睡 / 全家回酒店休息窗口。</p>
+    <h2>03 / 每日行程</h2><p class="lead">把你收集的“必打卡”融合进日程：青岛按老城 / 八大关海滨 / 市南夜景 / 啤酒人文分区；威海按西海岸 / 市区 / 东海岸分区。默认 13:00–15:30 给宝宝午睡和全家回血。</p>
     <div class="timeline">
-      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">休整日</span><div class="date">FRI · 8/28</div><h3>上海｜国际长途落地</h3><div class="slots"><div class="t">白天</div><div class="v">西雅图 → 上海，办理入境、取行李。</div><div class="t">晚上</div><div class="v">上海住一晚。只吃饭、洗澡、睡觉，不排景点。</div></div></div></div>
-      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">★☆☆☆☆</span><div class="date">SAT · 8/29</div><h3>青岛｜三路汇合 + 海边第一眼</h3><div class="slots"><div class="t">上午</div><div class="v">三组分别飞往青岛胶东机场；你们优先虹桥出发。</div><div class="t">下午</div><div class="v">酒店集合、入住、午休，不设硬性集合时间。</div><div class="t">傍晚</div><div class="v"><b>五四广场 → 奥帆中心</b>轻松散步，看海、看城市夜景；附近解决晚餐。</div></div></div></div>
-      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">★★☆☆☆</span><div class="date">SUN · 8/30</div><h3>青岛｜老城经典：栈桥 + 大学路片区</h3><div class="slots"><div class="t">09:00</div><div class="v"><b>栈桥</b>。早一点去，避开正午热度和更密集人流。</div><div class="t">10:30</div><div class="v">沿老城慢慢走：天主教堂外观 / 中山路 / 大学路一带，选 1–2 个即可，不打卡式暴走。</div><div class="t">12:00</div><div class="v">午餐 → 回酒店午休。</div><div class="t">16:30</div><div class="v">如果状态好，可去<b>小鱼山 / 信号山周边</b>看老城红瓦海景；推车不便则直接咖啡馆 + 晚餐。</div></div></div></div>
-      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">★★☆☆☆</span><div class="date">MON · 8/31</div><h3>青岛｜八大关 + 第二海水浴场</h3><div class="slots"><div class="t">09:00</div><div class="v"><b>八大关</b>树荫街区慢走，重点看花石楼周边，不需要把所有路走完。</div><div class="t">11:00</div><div class="v"><b>第二海水浴场</b>看海、踩沙。宝宝以遮阴、玩沙为主，不安排长时间下水。</div><div class="t">13:00</div><div class="v">回酒店午休。</div><div class="t">17:00</div><div class="v">自由活动：海边 / 商场 / 本地海鲜餐。当天不再塞景点。</div></div></div></div>
-      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">可拆分</span><div class="date">TUE · 9/1</div><h3>青岛｜家庭轻松日 / 成人可选崂山</h3><div class="slots"><div class="t">方案 A</div><div class="v"><b>全家主线：</b>青岛极地海洋公园或室内休闲，适合天气热/下雨，也方便宝宝。</div><div class="t">方案 B</div><div class="v"><b>成人支线：</b>如果非常想去崂山，2–4 名成年人单独去；长辈 + 宝宝留市区。崂山不建议全家硬上。</div><div class="t">晚上</div><div class="v">全家重新集合，吃一顿青岛收官晚餐。</div></div></div></div>
-      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">交通日</span><div class="date">WED · 9/2</div><h3>青岛 → 威海｜高铁换城</h3><div class="slots"><div class="t">上午</div><div class="v">酒店早餐、退房 → 青岛北站。</div><div class="t">建议</div><div class="v">选 <b>10:00–11:30 左右发车</b>的青岛北→威海车次；一等座优先，7 人 + 宝宝更宽松。</div><div class="t">中午</div><div class="v">抵达威海 → 酒店 → 午饭 / 午休。</div><div class="t">傍晚</div><div class="v"><b>威海公园 / 幸福门附近</b>看海散步，作为第一晚热身。</div></div></div></div>
-      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">★★☆☆☆</span><div class="date">THU · 9/3</div><h3>威海｜火炬八街 + 国际海水浴场</h3><div class="slots"><div class="t">08:00</div><div class="v"><b>火炬八街</b>尽量早到；核心价值是街道尽头的海景和拍照，1 小时左右足够。</div><div class="t">09:30</div><div class="v"><b>国际海水浴场</b>。找遮阴点，宝宝玩沙，长辈休息。</div><div class="t">11:30</div><div class="v">附近午餐 → 回酒店午休。</div><div class="t">17:00</div><div class="v">看体力决定是否再去海边看日落。</div></div></div></div>
-      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">★★★☆☆</span><div class="date">FRI · 9/4</div><h3>威海｜刘公岛</h3><div class="slots"><div class="t">08:30</div><div class="v">前往刘公岛码头，乘船登岛。</div><div class="t">上午</div><div class="v">甲午战争历史相关展馆 + 岛上慢走，景点不求全。</div><div class="t">12:00</div><div class="v">岛上简餐 / 视宝宝状态提前返航。</div><div class="t">下午</div><div class="v">回酒店休息。刘公岛当天不再安排另一个远景点。</div></div><div class="note warn" style="margin-top:14px">船班和景区开放可能受风浪天气影响；带宝宝当天必须以天气和海况优先。</div></div></div>
-      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">度假日</span><div class="date">SAT · 9/5</div><h3>威海｜完全松弛的一天</h3><div class="slots"><div class="t">上午</div><div class="v"><b>半月湾 / 环海路选一段</b>，看海、拍照，不做完整环线。</div><div class="t">中午</div><div class="v">找一家舒服的海鲜 / 鲁菜，回酒店休息。</div><div class="t">傍晚</div><div class="v">补前几天因为天气没完成的项目，或者干脆海边坐着。</div><div class="t">晚上</div><div class="v">收拾行李，确认次日威海→青岛高铁和青岛→福州/上海/襄阳后续交通。</div></div></div></div>
-      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">返程日</span><div class="date">SUN · 9/6</div><h3>威海 → 青岛｜分头回家</h3><div class="slots"><div class="t">原则</div><div class="v">威海高铁 → 青岛，再分别衔接航班。<b>高铁和飞机不要压得太紧。</b></div><div class="t">宝宝组</div><div class="v">青岛 → 福州直飞优先。</div><div class="t">你们</div><div class="v">根据后续安排青岛 → 上海；如果需要在上海办事，可继续留沪。</div><div class="t">襄阳组</div><div class="v">根据 9/6 当天实际可售航班，选择直飞或最顺的中转 / 高铁组合。</div></div></div></div>
+      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">休整日</span><div class="date">FRI · 8/28</div><h3>上海｜国际长途落地</h3><div class="slots"><div class="t">白天</div><div class="v">西雅图 → 上海，办理入境、取行李。</div><div class="t">晚上</div><div class="v">上海住一晚，只吃饭、洗澡、睡觉，不排景点。</div></div></div></div>
+
+      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">★☆☆☆☆</span><div class="date">SAT · 8/29</div><h3>青岛｜三路汇合 + 五四广场夜景</h3><div class="slots"><div class="t">上午</div><div class="v">三组分别抵达青岛；落地后各自去酒店，不在机场等齐。</div><div class="t">下午</div><div class="v">入住、补觉、休息。</div><div class="t">17:00</div><div class="v"><b>五四广场 → 奥帆中心</b>，第一次看海，轻松散步拍照。</div><div class="t">晚餐</div><div class="v">附近吃海鲜 / 鲅鱼水饺，不安排夜市暴走。</div></div></div></div>
+
+      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">★★☆☆☆</span><div class="date">SUN · 8/30</div><h3>青岛｜老城精华：栈桥 + 信号山 + 琴屿路</h3><div class="slots"><div class="t">08:30</div><div class="v"><b>栈桥</b>，趁早看海、拍地标照。</div><div class="t">10:00</div><div class="v"><b>信号山公园</b>俯瞰红瓦绿树老城区；若推车不方便，长辈和宝宝可在附近咖啡馆休息。</div><div class="t">11:30</div><div class="v">中山路 / 天主教堂外观二选一，随后午餐回酒店。</div><div class="t">16:30</div><div class="v"><b>琴屿路</b>海边慢走，看傍晚光线；体力一般就只走一小段。</div><div class="t">晚上</div><div class="v">可选 <b>台东夜市</b>：想吃小吃的成年人去，宝宝组可先回酒店。</div></div></div></div>
+
+      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">★★☆☆☆</span><div class="date">MON · 8/31</div><h3>青岛｜八大关欧陆建筑 + 海滨</h3><div class="slots"><div class="t">09:00</div><div class="v"><b>八大关</b>林荫街区慢走；按你的攻略，重点买 <b>花石楼</b> 的票即可，其余以外观和街区氛围为主。</div><div class="t">11:00</div><div class="v"><b>第二海水浴场</b>踩沙看海，宝宝以遮阴和玩沙为主。</div><div class="t">13:00</div><div class="v">午餐 → 回酒店午休。</div><div class="t">17:00</div><div class="v">状态好可去 <b>小麦岛</b>，等“橘子海”日落；如果天气一般，就留在市区散步。</div></div></div></div>
+
+      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">人文 + 美食</span><div class="date">TUE · 9/1</div><h3>青岛｜啤酒博物馆 + 夜市收官</h3><div class="slots"><div class="t">09:30</div><div class="v"><b>青岛啤酒博物馆</b>。提前预约；成年人看百年厂史、尝原浆，带宝宝控制参观时长。</div><div class="t">12:00</div><div class="v">附近午餐 → 回酒店午休。</div><div class="t">16:30</div><div class="v">自由补漏：如果 8/30 琴屿路或 8/31 小麦岛因天气取消，就放到这里。</div><div class="t">晚上</div><div class="v"><b>台东夜市 / 李村夜市二选一</b>。台东更顺路、更适合第一次去；李村更偏“本地生活感”，不建议两个都跑。</div></div><div class="note warn" style="margin-top:14px"><b>崂山：</b>仍保留为成人支线，不放全家主线。若有人特别想去，可 9/1 拆分；带 11 个月宝宝和长辈不建议为了“打卡”硬上。</div></div></div>
+
+      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">交通日</span><div class="date">WED · 9/2</div><h3>青岛 → 威海｜高铁换城 + 韩乐坊</h3><div class="slots"><div class="t">上午</div><div class="v">早餐、退房，按最终车次选择青岛站或青岛北站。</div><div class="t">提醒</div><div class="v"><b>你之前记的“到青岛就选青岛站”很有价值：</b>青岛站更靠近老城；但这次去威海不强行固定，最终以酒店位置和当天直达车次为准。</div><div class="t">中午</div><div class="v">抵达威海 → 酒店 → 午饭 / 午休。</div><div class="t">17:00</div><div class="v"><b>悦海公园</b>看灯塔和海边日落。</div><div class="t">晚上</div><div class="v"><b>韩乐坊</b>吃韩餐：烤肉、炸鸡、炒年糕，作为威海第一顿。</div></div></div></div>
+
+      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">★★☆☆☆</span><div class="date">THU · 9/3</div><h3>威海｜火炬八街 + 国际海水浴场</h3><div class="slots"><div class="t">08:00</div><div class="v"><b>火炬八街</b>尽量早到，避开最密人流；拍完“街道直通大海”就走，不久留。</div><div class="t">09:30</div><div class="v"><b>国际海水浴场</b>，找遮阴处，宝宝玩沙、长辈休息。</div><div class="t">11:30</div><div class="v">附近午餐 → 回酒店午休。</div><div class="t">17:00</div><div class="v">补一个轻松海滨点，或直接回韩乐坊 / 市区吃饭。</div></div></div></div>
+
+      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">★★★☆☆</span><div class="date">FRI · 9/4</div><h3>威海｜刘公岛：历史日</h3><div class="slots"><div class="t">08:30</div><div class="v">前往刘公岛码头，乘船登岛。</div><div class="t">上午</div><div class="v">甲午战争相关展馆 + 岛上慢走，景点不求全。</div><div class="t">12:00</div><div class="v">岛上简餐，视宝宝状态决定是否提前返航。</div><div class="t">下午</div><div class="v">回酒店休息；当天不再安排远郊。</div></div><div class="note warn" style="margin-top:14px">乘船受风浪天气影响，带宝宝时天气和海况优先级高于“必须上岛”。</div></div></div>
+
+      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">东海岸精华</span><div class="date">SAT · 9/5</div><h3>威海｜那香海 + 布鲁维斯号沉船</h3><div class="slots"><div class="t">上午</div><div class="v">包车 / 租车走威海东海岸，先到 <b>那香海</b>，白沙滩慢玩。</div><div class="t">中午</div><div class="v">沿线午餐，给宝宝留出车上午睡时间。</div><div class="t">下午</div><div class="v">前往 <b>布鲁维斯号沉船</b> 打卡，控制停留时间，拍照后返回市区。</div><div class="t">可选</div><div class="v"><b>成山头</b>只作为成人体力好、天气好时的加码；不建议和那香海 + 沉船一起强行全收。</div><div class="t">晚上</div><div class="v">回市区吃海鲜 / 鲅鱼水饺，收拾行李。</div></div><div class="note good" style="margin-top:14px"><b>如果大家已经累了：</b>9/5 直接改成半月湾 / 环海路 + 咖啡 + 海鲜的松弛日，远郊全部取消也完全合理。</div></div></div>
+
+      <div class="day"><div class="dot"></div><div class="day-card"><span class="pace">返程日</span><div class="date">SUN · 9/6</div><h3>威海 → 青岛｜分头回家</h3><div class="slots"><div class="t">原则</div><div class="v">威海高铁 → 青岛，再分别衔接航班；<b>高铁和飞机至少留足缓冲，不做极限换乘。</b></div><div class="t">宝宝组</div><div class="v">青岛 → 福州直飞优先。</div><div class="t">你们</div><div class="v">青岛 → 上海，按后续安排继续留沪或返程。</div><div class="t">襄阳组</div><div class="v">按当天可售航班 / 高铁组合选择最顺方案。</div></div></div></div>
     </div>
+  </section>
+
+  <section id="tips" class="section">
+    <h2>04 / 你的攻略：避坑 & 打卡清单</h2><p class="lead">这部分保留你自己搜集的“经验型信息”，并把它们变成真正能执行的提醒。</p>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>⚠️ 青岛避坑</h3>
+        <div class="note pit"><b>“到青岛就选青岛站”</b><br><span class="mini">如果铁路行程需要在青岛市区下车，青岛站位置更靠近栈桥 / 老城，旅游体验通常比住得很远再折返更直接。但青岛→威海这段仍以当天直达车次和酒店位置综合决定，不机械锁死车站。</span></div>
+        <div class="place"><b>八大关门票别乱买</b><p>按你的经验，主要买 <b>花石楼</b> 即可；八大关真正的价值是街区、树荫、建筑外观和海滨，不需要把每栋收费建筑都进去。</p></div>
+        <div class="place"><b>啤酒博物馆提前预约</b><p>不要临时到门口再决定，尤其 7 人团；尽量选上午时段。</p></div>
+        <div class="place"><b>夜市二选一</b><p>台东夜市更顺主线；李村夜市更偏本地生活。没必要为了“都去过”跨城跑两个。</p></div>
+      </div>
+      <div class="card">
+        <h3>📸 一眼打卡表</h3>
+        <p><b>青岛：</b></p><div class="spotline"><span class="spotpill">栈桥</span><span class="spotpill">信号山</span><span class="spotpill">琴屿路</span><span class="spotpill">八大关</span><span class="spotpill">花石楼</span><span class="spotpill">五四广场</span><span class="spotpill">奥帆中心</span><span class="spotpill">小麦岛橘子海</span><span class="spotpill">啤酒博物馆</span><span class="spotpill">台东夜市</span><span class="spotpill">李村夜市</span></div>
+        <p style="margin-top:14px"><b>威海：</b></p><div class="spotline"><span class="spotpill">火炬八街</span><span class="spotpill">国际海水浴场</span><span class="spotpill">悦海公园灯塔</span><span class="spotpill">韩乐坊</span><span class="spotpill">刘公岛</span><span class="spotpill">那香海</span><span class="spotpill">布鲁维斯号沉船</span><span class="spotpill">成山头（可选）</span></div>
+      </div>
+    </div>
+    <div class="note warn" style="margin-top:16px"><b>蓬莱仙境：</b>这个点实际属于烟台蓬莱，不在青岛市区。它值得单独安排，但和这次“青岛 → 威海”的轻松家庭线不顺路，所以第二版把它放进“未来烟台 / 蓬莱单独旅行”，不塞进本次主线。</div>
   </section>
 
   <section id="spots" class="section">
-    <h2>04 / 景点为什么这样取舍</h2><p class="lead">这是“家庭旅行”，不是“景点收集”。第一版把景点按必去 / 可选 / 不建议全家三档处理。</p>
+    <h2>05 / 景点怎么分区，才不会来回折返</h2><p class="lead">第二版不再只是“必去 / 可选”，而是按地理逻辑分组。看到一个区域，就尽量把附近值得去的点一次完成。</p>
     <div class="grid grid-2">
-      <div class="card"><h3>青岛 · 主线保留</h3><div class="place"><b>八大关 + 第二海水浴场</b><span class="tag">经典</span><span class="tag">树荫多</span><span class="tag">宝宝友好</span><p>建筑、林荫和海边一次完成；八大关与第二海水浴场天然相邻。</p></div><div class="place"><b>五四广场 + 奥帆中心</b><span class="tag">轻松</span><span class="tag">夜景</span><p>很适合汇合第一天，不需要门票、不需要精确预约。</p></div><div class="place"><b>栈桥 + 老城</b><span class="tag">代表性</span><span class="tag">步行</span><p>青岛第一次去值得保留，但控制步数，不把所有“网红路口”一次走完。</p></div></div>
-      <div class="card"><h3>威海 · 主线保留</h3><div class="place"><b>火炬八街 + 国际海水浴场</b><span class="tag">拍照</span><span class="tag">海边</span><p>两个点相邻，可组成一个低强度上午；火炬八街本身 1–2 小时已经足够。</p></div><div class="place"><b>刘公岛</b><span class="tag">历史</span><span class="tag">半日~一日</span><p>威海最有辨识度的人文景点之一，但乘船受天气影响，所以单独留一天。</p></div><div class="place"><b>威海公园 / 海滨散步</b><span class="tag">免费</span><span class="tag">低强度</span><p>给换城日和第一晚使用，不需要为了“打卡”专门折腾。</p></div></div>
+      <div class="card"><h3>青岛 · 4 个区域</h3>
+        <div class="place"><b>① 老城线</b><span class="tag">栈桥</span><span class="tag">信号山</span><span class="tag">琴屿路</span><p>集中放 8/30，核心是红瓦老城 + 海岸线；不要把大学路、中山路、教堂、信号山、琴屿路全部当“任务”。</p></div>
+        <div class="place"><b>② 八大关海滨线</b><span class="tag">八大关</span><span class="tag">花石楼</span><span class="tag">第二海水浴场</span><p>最适合长辈和宝宝的一组，树荫多、节奏慢。</p></div>
+        <div class="place"><b>③ 市南现代海滨线</b><span class="tag">五四广场</span><span class="tag">奥帆中心</span><span class="tag">小麦岛</span><p>五四广场 + 奥帆中心适合第一晚；小麦岛单独看日落，不需要硬绑在一起。</p></div>
+        <div class="place"><b>④ 啤酒 + 夜市线</b><span class="tag">啤酒博物馆</span><span class="tag">台东</span><span class="tag">李村可选</span><p>啤酒博物馆和台东更容易串联；李村夜市留作备选。</p></div>
+      </div>
+      <div class="card"><h3>威海 · 3 个区域</h3>
+        <div class="place"><b>① 西海岸网红线</b><span class="tag">火炬八街</span><span class="tag">国际海水浴场</span><p>早上去最合适，拍完照就转海滩，不要在人最多的时候卡在火炬八街。</p></div>
+        <div class="place"><b>② 市区人文线</b><span class="tag">刘公岛</span><span class="tag">悦海公园</span><span class="tag">韩乐坊</span><p>刘公岛单独一天；悦海公园和韩乐坊更适合换城日傍晚。</p></div>
+        <div class="place"><b>③ 东海岸远郊线</b><span class="tag">那香海</span><span class="tag">布鲁维斯号</span><span class="tag">成山头</span><p>适合包车 / 租车。那香海 + 沉船是主组合；成山头距离和体力成本更高，只做加码。</p></div>
+      </div>
     </div>
-    <details><summary>为什么不把崂山放成全家必去？</summary><div>崂山本身值得去，但从市区往返、景区交通、坡道和步行量都会放大带 11 个月宝宝与长辈的疲劳。更好的方式是把 9/1 做成“可拆分日”：想去的成年人去，不想折腾的人在市区休息。</div></details>
-    <details><summary>为什么不去成山头 / 那香海做整天远郊？</summary><div>威海阶段只有 4 晚，如果再安排一个远郊整日，会把真正舒服的海滨度假变成赶路。第一版先把经典市区 + 刘公岛走好；如果你们特别想自驾，再在下一版替换 9/5。</div></details>
+    <details><summary>崂山还去不去？</summary><div>崂山值得去，但它和这次“7 人 + 11 个月宝宝 + 长辈”的旅行目标冲突。除非有 2–4 个成年人非常想去，否则不把它列成全家必去。这样反而能把青岛老城、海边和吃饭体验做得更完整。</div></details>
+    <details><summary>成山头和布鲁维斯号能不能一天全走？</summary><div>能，但不建议把“能”当成“应该”。包车、天气好、成年人为主时可以；带宝宝的家庭更建议那香海 + 布鲁维斯号两点收手，留出车上午睡和回城余量。</div></details>
   </section>
 
   <section id="hotel" class="section">
-    <h2>05 / 住宿区域建议</h2><p class="lead">暂时不锁具体酒店，先锁“区域”。等你 review 完，我再按预算、房型和是否需要婴儿床筛 3–5 家。</p>
+    <h2>06 / 住宿区域建议</h2><p class="lead">暂时不锁具体酒店，先锁“区域”。等你 review 完，我再按预算、房型和是否需要婴儿床筛 3–5 家。</p>
     <table><thead><tr><th>城市</th><th>首选区域</th><th>为什么</th><th>不建议</th></tr></thead><tbody>
       <tr><td><b>青岛</b></td><td>五四广场 / 奥帆中心附近</td><td>餐饮、商场、海边、打车都方便；第一晚和晚间散步尤其合适。家庭团住这里比住最老城区更省心。</td><td>为了“网红海景”住很偏的民宿；7 人 + 宝宝后勤容易麻烦。</td></tr>
       <tr><td><b>威海</b></td><td>环翠区市中心 / 威海公园一带</td><td>去刘公岛码头、餐饮、火车站和海滨都比较均衡；打车去火炬八街也可接受。</td><td>四晚都住太远的度假区，除非你们决定租车。</td></tr>
@@ -102,7 +139,7 @@
   </section>
 
   <section id="baby" class="section">
-    <h2>06 / 11 个月宝宝版本</h2><p class="lead">全程默认“宝宝午睡优先于景点”。这会让所有大人的体验反而更好。</p>
+    <h2>07 / 11 个月宝宝版本</h2><p class="lead">全程默认“宝宝午睡优先于景点”。这会让所有大人的体验反而更好。</p>
     <div class="grid grid-3">
       <div class="card"><h3>☀️ 防晒 / 防暑</h3><p>8 月底山东沿海仍可能很晒。海边尽量安排早上和 16:30 后；准备遮阳篷、帽子、防晒和便携小风扇。</p></div>
       <div class="card"><h3>🍼 随身包</h3><p>奶 / 水、辅食、尿布、湿巾、2 套衣服、薄外套、垃圾袋、常用药品单独一包装，不进托运行李。</p></div>
@@ -111,7 +148,7 @@
   </section>
 
   <section id="booking" class="section">
-    <h2>07 / 接下来需要锁定的东西</h2><p class="lead">这版先 review 行程逻辑。确认后再进入“具体航班 + 高铁 + 酒店 + 餐厅”版本。</p>
+    <h2>08 / 接下来需要锁定的东西</h2><p class="lead">这版先 review 行程逻辑。确认后再进入“具体航班 + 高铁 + 酒店 + 餐厅”版本。</p>
     <div class="card">
       <div class="todo"><div class="box"></div><div><b>确认 8/28 上海落地时间</b><div class="muted">决定 8/29 虹桥飞青岛选上午还是中午。</div></div></div>
       <div class="todo"><div class="box"></div><div><b>三组统一目标：8/29 下午前后到青岛</b><div class="muted">不要求同一时间，只要求不要有人晚上 11 点才到。</div></div></div>
@@ -123,8 +160,8 @@
   </section>
 
   <section class="section">
-    <h2>08 / 第一版结论</h2>
-    <div class="note good"><b>推荐结构：</b>8/28 上海休息 → 8/29 全家青岛集合 → 青岛 4 晚 → 9/2 高铁去威海 → 威海 4 晚 → 9/6 分头返程。整个行程最重要的不是多去两个景点，而是让 7 个人、尤其宝宝和长辈，都觉得每天还有余力。</div>
+    <h2>09 / 第二版结论</h2>
+    <div class="note good"><b>第二版推荐结构：</b>青岛把“栈桥 / 信号山 / 琴屿路”“八大关 / 花石楼 / 海水浴场”“五四广场 / 奥帆”“啤酒博物馆 / 夜市”拆成自然区域；威海则把“火炬八街”“刘公岛”“那香海 + 布鲁维斯号”分开。这样既把你原来攻略里的核心打卡点都保留下来，又不会为了收集景点把 7 个人拖得太累。</div>
   </section>
 
   <section id="sources" class="section">
@@ -140,6 +177,6 @@
     <div class="note warn"><b>关于 GitHub Pages：</b>这个页面是单文件、零外部 JS/CSS/字体依赖，放到 GitHub Pages 后加载负担很小；但 GitHub / GitHub Pages 在中国大陆的网络可达性并非 100% 稳定。为了给国内家人“肯定能打开”，后续可以同时保留一个可微信发送的 HTML 文件，或再镜像到国内静态托管。</div>
   </section>
 </main>
-<footer>2026 青岛 · 威海家庭旅行计划 · Draft v1<br><small>单文件 HTML，可直接作为 GitHub Pages 的 <code>index.html</code></small></footer>
+<footer>2026 青岛 · 威海家庭旅行计划 · Draft v2<br><small>单文件 HTML，可直接作为 GitHub Pages 的 <code>index.html</code></small></footer>
 </body>
 </html>
